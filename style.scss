@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Quicksand',
+    sans-serif;
+  font-weight: 400;
+  transition: background-color ease-in 1s;
+
+  .wrapper {
+    min-height: 300px;
+    width: 550px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: #fff;
+    border-radius: 5px;
+
+    .quote {
+      #text {
+        font-size: 1.7em;
+        clear: both;
+        text-align: center;
+        font-weight: 500px;
+        background-color: #fff;
+      }
+
+      i {
+        font-size: 1.0em;
+        margin-right: 0.4em;
+      }
+    }
+
+    .author {
+      height: auto;
+      clear: both;
+      padding-top: 10px;
+      font-size: 1em;
+      text-align: right;
+      opacity: 0;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-top: 20px;
+
+      .button {
+        transition: color ease-in 1s;
+      }
+
+      .quote-button {
+        transition: background-color ease-in 1s;
+      }
+
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      i {
+        font-size: 2.5rem;
+        padding-right: 5px;
+        height: 38px;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+
+      #new-quote-container {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      #new-quote {
+        height: 38px;
+        padding: 0 30px;
+        border: none;
+        outline: none;
+
+        border-radius: 3px;
+        color: #fff;
+        background-color: #333;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+      }
+    }
+
+  }
+
+}

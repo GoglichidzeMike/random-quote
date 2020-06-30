@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  -webkit-transition: background-color ease-in 1s;
+  transition: background-color ease-in 1s;
+}
+
+body .wrapper {
+  min-height: 300px;
+  width: 550px;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+body .wrapper .quote #text {
+  font-size: 1.7em;
+  clear: both;
+  text-align: center;
+  font-weight: 500px;
+  background-color: #fff;
+}
+
+body .wrapper .quote i {
+  font-size: 1.0em;
+  margin-right: 0.4em;
+}
+
+body .wrapper .author {
+  height: auto;
+  clear: both;
+  padding-top: 10px;
+  font-size: 1em;
+  text-align: right;
+  opacity: 0;
+}
+
+body .wrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+body .wrapper .buttons .button {
+  -webkit-transition: color ease-in 1s;
+  transition: color ease-in 1s;
+}
+
+body .wrapper .buttons .quote-button {
+  -webkit-transition: background-color ease-in 1s;
+  transition: background-color ease-in 1s;
+}
+
+body .wrapper .buttons a {
+  text-decoration: none;
+  color: #333;
+}
+
+body .wrapper .buttons i {
+  font-size: 2.5rem;
+  padding-right: 5px;
+  height: 38px;
+}
+
+body .wrapper .buttons i:hover {
+  opacity: 0.9;
+}
+
+body .wrapper .buttons #new-quote-container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .wrapper .buttons #new-quote {
+  height: 38px;
+  padding: 0 30px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+body .wrapper .buttons #new-quote:hover {
+  opacity: 0.9;
+}
+/*# sourceMappingURL=style.css.map */
